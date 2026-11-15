@@ -34,7 +34,7 @@ function calcularMultiplicacao() {
     fetch("/api/multiplicacao", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: Json.stringify({ valor1: v1, valor2: v2})
+        body: JSON.stringify({ valor1: v1, valor2: v2})
     })
     .then(res => res.json())
     .then(data => {
